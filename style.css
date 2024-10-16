@@ -1,25 +1,31 @@
-/* Customizable snowflake styling */
 .loader button {
-    width: 50%; /* Width of the button */
-    height: 100px; /* Height of the button */
-    position: fixed; /* Fixes the button's position */
-    left: 50%; /* Centers the button horizontally */
-    bottom: 20px; /* Positions the button 20px from the bottom of the viewport */
-    transform: translate(-50%, 0); /* Centers the button using transform */
-    background: rgba(211, 211, 211, 0.7); /* Light grey background with transparency */
-    backdrop-filter: blur(10px); /* Applies a slight blur effect to the button */
+    width: 15%; /* Compact width */
+    max-width: 150px; /* Maximum width */
+    height: 60px; /* Button height */
+    position: fixed; /* Fixed positioning */
+    left: 50%; /* Center horizontally */
+    bottom: 50px; /* Ensure space above the footer */
+    transform: translate(-50%, 0); /* Adjusts horizontal centering */
+    background: rgba(211, 211, 211, 0.3); /* Light grey background with transparency */
+    backdrop-filter: blur(5px); /* Reduced blur effect */
     z-index: 9999999999999999999999; /* High z-index to stay on top of other elements */
-    font-size: 50px; /* Font size of the button text */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
     outline: none; /* No outline */
-    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    box-sizing: border-box; /* Box-sizing */
     border: none; /* No border */
-    border-radius: .3em; /* Rounded corners */
+    border-radius: 0.5em; /* Rounded corners */
     text-transform: uppercase; /* Uppercase text */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .16), 0 2px 4px rgba(110, 80, 20, .4),
         inset 0 -2px 5px 1px rgb(180, 151, 127),
         inset 0 -1px 1px 3px rgba(250, 227, 133, 1); /* Box shadows */
-    transition: all .2s ease-in-out; /* Transition effect for hover */
+    transition: all 0.2s ease-in-out; /* Transition effect */
     cursor: pointer; /* Pointer cursor on hover */
+}
+
+.loader button:hover {
+    background: rgba(255, 255, 255, 0.4); /* Light background on hover */
+    transform: translate(-50%, 0) scale(1.05); /* Slight scale on hover */
 }
 
 .golden-btn:focus,
@@ -67,18 +73,17 @@ img {
 }
 .footer {
     position: fixed; /* Fixes the footer to the bottom */
-    left: 50%; /* Centers it horizontally */
-    bottom: 0; /* Aligns to the bottom */
-    transform: translateX(-50%); /* Corrects the centering by shifting left half its width */
+    left: 50%; /* Centers the footer horizontally */
+    bottom: 0; /* Aligns footer to the bottom */
+    transform: translateX(-50%); /* Ensures horizontal centering */
     width: 100%; /* Full width */
     padding: 10px 0; /* Padding for top and bottom */
     background-color: transparent; /* Transparent background */
     color: black; /* Black text color */
     text-align: center; /* Centers text */
     font-size: 16px; /* Font size */
-    z-index: 1000; /* High z-index to stay on top of other elements */
+    z-index: 1000; /* High z-index to ensure visibility */
 }
-
 
 .balloon-border {
     position: fixed; /* Fixes the balloon border position */
