@@ -1,0 +1,140 @@
+/* Customizable snowflake styling */
+.loader button {
+    width: 50%; /* Width of the button */
+    height: 100px; /* Height of the button */
+    position: fixed; /* Fixes the button's position */
+    left: 50%; /* Centers the button horizontally */
+    bottom: 20px; /* Positions the button 20px from the bottom of the viewport */
+    transform: translate(-50%, 0); /* Centers the button using transform */
+    background: rgba(211, 211, 211, 0.7); /* Light grey background with transparency */
+    backdrop-filter: blur(10px); /* Applies a slight blur effect to the button */
+    z-index: 9999999999999999999999; /* High z-index to stay on top of other elements */
+    font-size: 50px; /* Font size of the button text */
+    outline: none; /* No outline */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    border: none; /* No border */
+    border-radius: .3em; /* Rounded corners */
+    text-transform: uppercase; /* Uppercase text */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
+        inset 0 -2px 5px 1px rgb(180, 151, 127),
+        inset 0 -1px 1px 3px rgba(250, 227, 133, 1); /* Box shadows */
+    transition: all .2s ease-in-out; /* Transition effect for hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.golden-btn:focus,
+.golden-btn:hover {
+    background: rgba(200, 200, 200, 0.9); /* Slightly darker on hover for visibility */
+    backdrop-filter: blur(15px); /* Increase blur on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+        inset 0 -2px 5px 1px #b17d10,
+        inset 0 -1px 1px 3px rgba(250, 227, 133, 1); /* Hover shadow effect */
+    color: rgba(120, 50, 5, .8); /* Changes text color on hover */
+}
+
+.golden-btn:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
+        inset 0 -2px 5px 1px #b17d10,
+        inset 0 -1px 1px 3px rgba(250, 227, 133, 1); /* Active state shadow */
+}
+
+/* Rest of the styles remain the same */
+.loader {
+    position: fixed; /* Fixes the background to the viewport */
+    left: 0; /* Aligns to the left */
+    top: 0; /* Aligns to the top */
+    width: 100%; /* Takes full width */
+    height: 100%; /* Takes full height */
+    z-index: 999; /* High z-index to stay on top of other elements */
+    background: url('img/WhatsApp Image 2024-10-16 at 12.49.49 PM.jpeg') center center / contain no-repeat; /* Sets the background image */
+    backdrop-filter: blur(50px); /* Applies blur effect */
+    -webkit-backdrop-filter: blur(50px); /* Safari compatibility */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay */
+}
+
+.song {
+    display: none; /* Hides the song element */
+}
+
+body {
+    background-color: #FFDAB9; /* Body background color */
+}
+
+img {
+    width: 100%; /* Sets images to full width */
+}
+.footer {
+    position: fixed; /* Fixes the footer to the bottom */
+    left: 50%; /* Centers it horizontally */
+    bottom: 0; /* Aligns to the bottom */
+    transform: translateX(-50%); /* Corrects the centering by shifting left half its width */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Padding for top and bottom */
+    background-color: transparent; /* Transparent background */
+    color: black; /* Black text color */
+    text-align: center; /* Centers text */
+    font-size: 16px; /* Font size */
+    z-index: 1000; /* High z-index to stay on top of other elements */
+}
+
+
+.balloon-border {
+    position: fixed; /* Fixes the balloon border position */
+    top: 100%; /* Positions it outside the top of the viewport */
+    opacity: 0.5; /* Sets the opacity */
+    z-index: 99999999; /* High z-index for visibility */
+}
+
+.area {
+    text-align: center; /* Centers text */
+    font-size: 70px; /* Font size */
+    color: #C4515C; /* Text color */
+    letter-spacing: -7px; /* Letter spacing */
+    font-weight: 700; /* Bold font */
+    text-transform: uppercase; /* Uppercase text */
+    animation: spin 2s ease-out infinite; /* Spin animation */
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff; /* Text shadow */
+}
+
+#nae {
+    text-transform: capitalize; /* Capitalizes the text */
+}
+
+#confetti {
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Aligns to the left */
+    top: 0; /* Aligns to the top */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0); /* Starts rotation */
+    }
+
+    25% {
+        transform: rotateZ(10deg); /* Slight rotation */
+    }
+
+    50% {
+        transform: rotateZ(0deg); /* Returns to start */
+    }
+
+    75% {
+        transform: rotateZ(-10deg); /* Slight rotation the other way */
+    }
+}
+
+.type-wrap {
+    font-size: 25px; /* Font size for type wrap */
+    color: #C4515C; /* Text color */
+}
+
+.cake {
+    transform: translateY(-50%); /* Adjusts vertical position */
+    transform: translateX(-50%); /* Adjusts horizontal position */
+    left: 50%; /* Centers horizontally */
+    position: absolute; /* Absolute positioning */
+    padding-top: 250px; /* Adds padding from the top */
+}
