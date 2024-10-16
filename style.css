@@ -46,11 +46,13 @@
     width: 100%; /* Takes full width */
     height: 100%; /* Takes full height */
     z-index: 999; /* High z-index to stay on top of other elements */
-    background: url('img/WhatsApp Image 2024-10-16 at 12.49.49 PM.jpeg') center center / contain no-repeat; /* Sets the background image */
+    background: url('img/bg.jpeg') center center no-repeat; /* Sets the background image */
+    background-size: contain; /* Adjusts the image to fit without cropping */
     backdrop-filter: blur(50px); /* Applies blur effect */
     -webkit-backdrop-filter: blur(50px); /* Safari compatibility */
     background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay */
 }
+
 
 .song {
     display: none; /* Hides the song element */
